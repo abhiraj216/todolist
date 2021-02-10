@@ -63,6 +63,6 @@ app.get("/about", function(req,res){
   res.render("about");
 });
 
-app.listen(4000, function () {
+app.listen(process.env.PORT, function () {
   console.log("server start on port 4000");
 });
